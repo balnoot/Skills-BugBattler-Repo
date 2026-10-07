@@ -1,10 +1,8 @@
 #! /usr/bin/env node
 
-/** ff dit is de header soort van negeer dit */
+const { getBanner } = require("./banner");
 
-
-
-/** hier stopt de header===================== */
+console.log(getBanner());
 
 const fs = require("fs");
 const path = require("path");
