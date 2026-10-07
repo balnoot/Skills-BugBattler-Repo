@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Login werkt niet",
+    "description": "Error bij inloggen",
+    "priority": "high",
+    "status": "open"
+  },
+  {
+    "title": "bug",
+    "description": "mango",
+    "priority": "high",
+    "status": "closed"
+  },
+  {
+    "title": "website geef 404 code",
+    "description": "dit gebeurt omdat er een bug zit in de backend",
+    "priority": "high",
+    "status": "open"
+  },
+  {
+    "title": "supabase connect niet ",
+    "description": "heel vervelend, want dit moet voor het offerte systeem",
+    "priority": "medium",
+    "status": "open"
+  }
+]
