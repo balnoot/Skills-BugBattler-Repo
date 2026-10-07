@@ -13,10 +13,10 @@ const PRIORITIES = ["low", "medium", "high"];
 
 const HELP_TEXT = `
 ${getBanner()}
-BugBattler - beheer je bug reports.
+Mango CLI bug beheer - beheer je bug reports.
 
 Gebruik:
-  bugbattler <command> [opties]
+  mango <command> [opties]
 
 Commands:
   add-report      Voeg een bug report toe
@@ -25,9 +25,9 @@ Commands:
   help            Toon deze helptekst, dit is dus niet nuttig meer
 
 Voorbeelden:
-  bugbattler add-report --title "Login werkt niet" --description "Login geeft een error" --priority high --status open
-  bugbattler list-reports --status open
-  bugbattler filter --status open --priority high
+  mango add-report --title "Login werkt niet" --description "Login geeft een error" --priority high --status open
+  mango list-reports --status open
+  mango filter --status open --priority high
 `;
 
 
@@ -55,7 +55,7 @@ function loadReports() {
         fs.readFileSync(REPORTS_FILE, "utf-8")
     );
 }
-
+    
 function saveReports(reports) {
     fs.writeFileSync(
         REPORTS_FILE,
